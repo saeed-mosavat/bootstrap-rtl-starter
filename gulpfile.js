@@ -38,7 +38,7 @@ gulp.task('fonts', function(){
 
 gulp.task('samim-font', function(){
 	return gulp.src('node_modules/samim-font/dist/font-face.css')
-	.pipe(gulp.dest('src/css'));
+	.pipe(gulp.dest('src/fonts'));
 });
 
 

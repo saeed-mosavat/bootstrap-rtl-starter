@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-rtl-starter",
+  "version": "1.0.0",
+  "description": "empty bootstrap-rtl project",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Saeed Mosavat",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-v4-rtl": "^4.1.1-0",
+    "jquery": "^3.3.1",
+    "samim-font": "^1.0.2",
+    "tether": "^1.4.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

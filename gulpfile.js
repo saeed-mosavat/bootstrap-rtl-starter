@@ -31,15 +31,6 @@ gulp.task('serve', ['sass'], function(){
 	gulp.watch('src/*.html').on('change', browserSync.reload); 
 })
 
-gulp.task('fonts', function(){
-	return gulp.src(['node_modules/samim-font/dist/*.eot', 'node_modules/samim-font/dist/*.ttf', 'node_modules/samim-font/dist/*.woff'])
-	.pipe(gulp.dest('src/fonts'));
-});
-
-gulp.task('samim-font', function(){
-	return gulp.src('node_modules/samim-font/dist/font-face.css')
-	.pipe(gulp.dest('src/fonts'));
-});
 
 // Move Font Awesome Fonts folder to src
 gulp.task('fonts2', function(){
@@ -53,4 +44,4 @@ gulp.task('fa', function(){
     .pipe(gulp.dest("src/css"));
 });
 
-gulp.task('default', ['js', 'samim-font', 'fonts', 'fonts2', 'fa', 'serve']);
+gulp.task('default', ['js', 'fonts2', 'fa', 'serve']);

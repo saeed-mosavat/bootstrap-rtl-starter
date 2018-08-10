@@ -12,7 +12,6 @@
     "bootstrap-v4-rtl": "^4.1.1-0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
-    "samim-font": "^1.0.2",
     "tether": "^1.4.4"
   },
   "devDependencies": {

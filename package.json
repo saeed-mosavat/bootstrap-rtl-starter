@@ -11,8 +11,7 @@
   "dependencies": {
     "bootstrap-v4-rtl": "^4.1.1-0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
-    "tether": "^1.4.4"
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "browser-sync": "^2.24.6",

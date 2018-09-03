@@ -14,8 +14,7 @@ gulp.task('sass', function(){
 // Move JS Files to src
 gulp.task('js', function(){
 	return gulp.src(['node_modules/bootstrap-v4-rtl/dist/js/bootstrap.min.js', 
-		'node_modules/jquery/dist/jquery.min.js', 
-		'node_modules/tether/dist/js/tether.min.js'])
+		'node_modules/jquery/dist/jquery.min.js'])
 	.pipe(gulp.dest('src/js'))
 	.pipe(browserSync.stream());
 });
@@ -24,11 +23,12 @@ gulp.task('js', function(){
 // watch SASS and serve
 gulp.task('serve', ['sass'], function(){
 	browserSync.init({
-		server: './src'
+		server: './src',
+        notify: false
 	});
 
 	gulp.watch(['node_modules/bootstrap-v4-rtl/scss/bootstrap-rtl.scss', 'src/scss/*.scss'], ['sass']);
-	gulp.watch('src/*.html').on('change', browserSync.reload); 
+	gulp.watch(['src/*.html', 'src/js/*.js']).on('change', browserSync.reload); 
 })
 
 
